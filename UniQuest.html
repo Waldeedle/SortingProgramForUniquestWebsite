@@ -1,0 +1,84 @@
+<!-- Waleed Masoom
+ICS4UO
+January 16TH, 2015
+UniQuest Website -->
+<!Doctype html>
+<html>
+	<head>
+		<!-- Styling the page in accordance to the rest of the site -->
+        <!-- the name of the page -->
+		<title>UniQuest | Your One Stop for Information on Universities</title>
+
+	    <!-- the css that styles the page depends on screen size -->
+		<link type="text/css" min-width:1601px rel="stylesheet" href="css/home.css" />
+		<link type="text/css" min-width: 1024px rel="stylesheet" href="css/midhome.css" />
+
+		<!-- the jquery library hosted by google being used -->
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!-- codes that we developed to make the site more fluid and have additional little aesthetic items that appeals to users -->
+        <!-- this code makes the button animated when you click on them, they fade out for a short duration before coming back to the full opacity -->
+        <script src="js/bani.js"></script>
+
+        <!-- this changes the height of the banner as you scroll down the page allowing for more content to be seen and lower the overall dominance that it has on the screen -->
+        <script src="js/scroll.js"></script>
+
+        <!-- this is the code that causes the slide show to progress and then reloop the same slides -->
+		<script src="js/slider.js"></script>
+
+		<!-- this is the code that allows for the text at the bottom of the page to fade in when you scroll down -->
+		<script src="js/hover.js"></script>
+
+        <!-- the icon for UniQuest -->
+		<link rel="icon" type="image" href="images/favicon.png" />
+	</head>
+	<body>
+		<!-- the header/ white banner that appears across the top is coded below -->
+        <div id="banner">
+            <a id="clear"href="UniQuest.html">
+                <img class ="icon" src="images/Icon.png"/>
+            </a>
+
+            <!-- container for the buttons and links -->
+            <div class="header">
+                <a href="/Users/569222/Desktop/aboutus.html" id="link1">About Us</a>
+                <a href="/Users/569222/Desktop/contact.html" id="link">Contact Us</a>
+                <a href="/Users/569222/Desktop/universities.html" id="link2">Universities</a>
+                <a href="/Users/569222/Desktop/programs.html" id="link3">Programs</a>
+                <a href="/Users/569222/Desktop/locations.html" id="link4">Locations</a>
+                
+                <!-- linking to the login and signup pages with buttons-->
+                <form action="login.html">
+                  <button id="log">Log In</button>
+                </form>
+                
+                <form action="signup.html">
+                  <button id="sign">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- the gallery and the images within it are listed and coded for below -->
+ 		<div id="slider">
+ 			<ul class="slides">
+ 				<li class="slide"><img id="gallery" src="images/welcome.jpg"/> </li>
+ 				<li class="slide"><img id="gallery" src="images/life.jpg"/> </li>
+ 				<li class="slide"><img id="gallery" src="images/land.jpg"/> </li>
+ 				<li class="slide"><img id="gallery" src="images/uni.jpg"/> </li>
+ 			 	<li class="slide"><img id="gallery" src="images/slide.jpg"/> </li>
+ 			   	<li class="slide"><img id="gallery" src="images/media.jpg"/> </li>
+ 			   	<li class="slide"><img id="gallery" src="images/welcome.jpg"/> </li>
+ 			</ul>
+		</div>
+
+        <!-- the rest of the website including an introduction video and information will be shown here -->
+		<div id="information">
+          
+            <!-- just the welcome is currently coded but we plan on extending this portion later on -->
+			<p id="intro_header">Welcome to UniQuest</p>
+          
+            <!-- this is the link to the sorting program that uses the registration data -->
+			<a href="sort.html" id="sorting">SORTING PROGRAM</a>
+		</div>
+	</body>
+</html>

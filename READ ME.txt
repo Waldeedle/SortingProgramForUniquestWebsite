@@ -1,0 +1,12 @@
+I just wanted to explain why I gave the files that I did and what is the importance of them. We will actually need to include the sorting program as part of our website unlike some groups who just need to complete it for a mark, so I decided to incorporate our website into this sorting program.
+
+(1) I included our homepage to show you that there is a layout to our website that is neat and tidy and also because this is a University website so a sorting feature for any user is not secure, and should only be an admin priviledge. For that reason I decided that instead of adding a flashy button or something of that sort i'll design it in an elegant manner that shows off our easy to use website and the functions that we plan to have it come with. 
+
+(2) The sorting program can be accessed through the homepage or the actual html document itself whichever you prefer. 
+
+(3) To add data to be sorted I also included the signup page, where you can register the data and parse it as a JSON string to your local storage, but we are transfering our website onto a mySQL server and this will allow us to tighten security and such. If you forget to add other entries no problem because I have set it up in such a way that you can go back and forth and watch your sorted list grow as you register more accounts! 
+
+I didn't include any other pages to keep our overall site a surprise. Now I won't continue to talk about the code instead I want you to enjoy a little taste of what's in store and what our plans are for UniQuest.
+
+
+Sincerely, Syed Waleed Masoom.

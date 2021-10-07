@@ -1,0 +1,85 @@
+<!-- Waleed Masoom
+ICS4UO
+April 20TH, 2015
+Sort Program -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Styling the page in accordance to the rest of the site -->
+        <!-- the name of the page -->
+        <title>UniQuest | Organizing Users</title>
+        
+        <!-- the css that styles the page depends on screen size -->
+        <link type="text/css" min-width:1601px rel="stylesheet" href="css/sort.css" />
+        <link type="text/css" min-width: 1024px rel="stylesheet" href="css/midsort.css" />
+        
+        <!-- the jquery library hosted by google being used -->
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!-- codes that we developed to make the site more fluid and have additional little aesthetic items that appeals to users -->
+        <!-- this code makes the button animated when you click on them, they fade out for a short duration before coming back to the full opacity -->
+        <script src="js/bani.js"></script>
+
+        <!-- this changes the height of the banner as you scroll down the page allowing for more content to be seen and lower the overall dominance that it has on the screen -->
+        <script src="js/scroll.js"></script>
+
+        <!-- the icon for UniQuest -->
+        <link rel="icon" type="image" href="images/favicon.png" />
+    </head>
+    <body>
+        <!-- the header/ white banner that appears across the top is coded below -->
+        <div id="banner">
+            <a id="clear"href="UniQuest.html">
+                <img class ="icon" src="images/Icon.png"/>
+            </a>
+
+            <!-- container for the buttons and links -->
+            <div class="header">
+                <a href="/Users/569222/Desktop/aboutus.html" id="link1">About Us</a>
+                <a href="/Users/569222/Desktop/contact.html" id="link">Contact Us</a>
+                <a href="/Users/569222/Desktop/universities.html" id="link2">Universities</a>
+                <a href="/Users/569222/Desktop/programs.html" id="link3">Programs</a>
+                <a href="/Users/569222/Desktop/locations.html" id="link4">Locations</a>
+                
+                <!-- linking to the login and signup pages with buttons-->
+                <form action="login.html">
+                  <button id="log">Log In</button>
+                </form>
+                
+                <form action="signup.html">
+                  <button id="sign">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- the following is specifically for the sorting html document -->
+        <h1>Please select a sorting method</h1>
+        
+        <!-- this is the drop down menu that lets a user specify the sorting method with all the different options and the starting text that is unselectable -->
+        <select name="dropdown">
+            <option selected="selected" disabled="disabled">Select a sort method</option>
+        	<option value="1" id='firstNameUp'>First Name Ascending</option>
+        	<option value="2" id='firstNameDown'>First Name Descending</option>
+       	    <option value="3" id='surnameUp'>Surname Ascending</option>
+        	<option value="4" id='surnameDown'>Surname Descending</option>
+        	<option value="5" id='highSchoolUp'>Highschool Ascending</option>
+        	<option value="6" id='highSchoolDown'>Highschool Descending</option>
+        	<option value="7" id='genderUp'>Females First</option>
+        	<option value="8" id='genderDown'>Males First</option>
+        	<option value="9" id='gradeUp'>Grade Ascending</option>
+        	<option value="10" id='gradeDown'>Grade Descending</option>
+        	<option value="11" id='studentNumberUp'>Student Number Ascending</option>
+        	<option value="12" id='studentNumberDown'>Student Number Descending</option>
+        	<option value="13" id='emailUp'>Email Ascending</option>
+        	<option value="14" id='emailDown'>Email Descending</option>
+        	<option value="15" id='userNameUp'>Username Ascending</option>
+        	<option value="16" id='userNameDown'>Username Descending</option>
+        </select>
+        
+        <!-- where the js outputs the information as specified by the user -->
+        <div id="d1"></div>
+        
+        <!-- the reason I put the js down here is because u can't output to a div if the DOM isn't setup by the browser yet -->
+        <script type="text/javascript" src="js/sort.js"></script>
+    </body>
+</html>
